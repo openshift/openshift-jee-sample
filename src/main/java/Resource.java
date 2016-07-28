@@ -17,7 +17,8 @@ import java.util.Arrays;
 public class Resource {
 
     @GET
-    public String hello(@PathParam("/{name}" )String name){
+    @Path("{name}")
+    public String hello(@PathParam("name" )String name){
         final String mongodb_user = System.getProperty("MONGODB_USER");
         final String mongodb_password = System.getProperty("MONGODB_PASSWORD");
         final String mongodb_database = System.getProperty("MONGODB_DATABASE");
