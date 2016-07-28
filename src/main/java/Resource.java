@@ -9,6 +9,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import java.util.Arrays;
+import java.util.Date;
 
 /**
  * Created by maciek on 28.07.2016.
@@ -17,8 +18,7 @@ import java.util.Arrays;
 public class Resource {
 
     @GET
-    @Path("{name}")
-    public String hello(@PathParam("name" )String name){
+    public String hello(){
         final String mongodb_user = System.getProperty("MONGODB_USER");
         final String mongodb_password = System.getProperty("MONGODB_PASSWORD");
         final String mongodb_database = System.getProperty("MONGODB_DATABASE");
@@ -29,7 +29,7 @@ public class Resource {
         MongoDatabase db = mongoClient.getDatabase(mongodb_database);
 
         db.getCollection("items").insertOne(
-                new Document("name",name));
+                new Document("name",new Date().toString()));
 
 
         FindIterable<Document> iterable = db.getCollection("items").find();
