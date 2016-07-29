@@ -23,14 +23,12 @@ public class Resource {
 
     @GET
     public String hello(){
-        log.info("log");
-        log.debug("debug");
-        log.error("error");
-        final String mongodb_user = System.getProperty("MONGODB_USER");
-        final String mongodb_password = System.getProperty("MONGODB_PASSWORD");
-        final String mongodb_database = System.getProperty("MONGODB_DATABASE");
+        log.info("hello world");
+        final String mongodb_user = System.getenv("MONGODB_USER");
+        final String mongodb_password = System.getenv("MONGODB_PASSWORD");
+        final String mongodb_database = System.getenv("MONGODB_DATABASE");
 
-        log.error(String.format("MONGODB_USER %s MONGODB_PASSWORD %s MONGODB_DATABASE %s",mongodb_user,mongodb_password,mongodb_database));
+        log.info(String.format("MONGODB_USER %s MONGODB_PASSWORD %s MONGODB_DATABASE %s",mongodb_user,mongodb_password,mongodb_database));
         MongoCredential credential = MongoCredential.createCredential(mongodb_user, mongodb_database, mongodb_password.toCharArray());
         MongoClient mongoClient = new MongoClient(new ServerAddress(), Arrays.asList(credential));
         MongoDatabase db = mongoClient.getDatabase(mongodb_database);
