@@ -4,6 +4,8 @@ import com.mongodb.ServerAddress;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -17,13 +19,18 @@ import java.util.Date;
 @Path("/resource")
 public class Resource {
 
+    private Logger log = LoggerFactory.getLogger(Resource.class);
+
     @GET
     public String hello(){
+        log.info("log");
+        log.debug("debug");
+        log.error("error");
         final String mongodb_user = System.getProperty("MONGODB_USER");
         final String mongodb_password = System.getProperty("MONGODB_PASSWORD");
         final String mongodb_database = System.getProperty("MONGODB_DATABASE");
 
-
+        log.error(String.format("MONGODB_USER %s MONGODB_PASSWORD %s MONGODB_DATABASE %s",mongodb_user,mongodb_password,mongodb_database));
         MongoCredential credential = MongoCredential.createCredential(mongodb_user, mongodb_database, mongodb_password.toCharArray());
         MongoClient mongoClient = new MongoClient(new ServerAddress(), Arrays.asList(credential));
         MongoDatabase db = mongoClient.getDatabase(mongodb_database);

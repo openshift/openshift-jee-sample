@@ -26,6 +26,11 @@
             <artifactId>mongo-java-driver</artifactId>
             <version>3.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
     </dependencies>
 
 <profiles>
