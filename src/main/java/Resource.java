@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * Created by maciek on 28.07.2016.
  */
-@Path("resource")
+@Path("/resource")
 public class Resource {
 
     @GET
