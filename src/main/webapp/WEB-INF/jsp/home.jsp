@@ -15,16 +15,5 @@
     </head>
     <body>
         <h1>Hello !!! ${param.msg}!</h1>
-        <%
-            List<TblContact> list = (List<TblContact>) session.getAttribute("data");
-            for (TblContact c : list) {
-        %>
-    <tr>
-        <td>${c.getName()}</td>
-        <td>${c.getAddress()}</td>
-    </tr>
-    <%
-        }
-    %>
-</body>
+    </body>
 </html>
