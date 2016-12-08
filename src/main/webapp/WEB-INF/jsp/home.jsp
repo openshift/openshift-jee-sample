@@ -5,7 +5,6 @@
 --%>
 
 <%@page import="java.util.List"%>
-<%@page import="com.test.entity.TblContact"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
