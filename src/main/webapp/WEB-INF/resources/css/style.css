@@ -175,6 +175,8 @@ input[type="submit"],input[type="reset"],.w3ls_footer_grid_leftl,.w3ls_footer_gr
     margin: 0 auto;
     text-align: center;
     border: 7px solid #44c7f4;
+    max-height: 300px !important;
+    max-width: 300px !important;
 }
 .banner h2 {
     font-size: 3.5em;

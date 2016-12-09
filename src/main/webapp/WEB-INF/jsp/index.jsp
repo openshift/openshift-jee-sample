@@ -73,7 +73,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="logo">
-                            <h1><a class="navbar-brand" href=""><span class="one">C</span>lassy Resume</a></h1>
+                            <h1><a class="navbar-brand" href=""><span class="one">S</span>uroj Resume</a></h1>
                         </div>
                     </div>                   
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -208,11 +208,11 @@
             <div class="skill-agile">
                 <div class='bar_group'>
                     <!--<div class='bar_group__bar thin elastic' label='HTML' value='180'></div>-->
-                    <div class='bar_group__bar thin elastic' label='Css3' value='130'></div>
-                    <div class='bar_group__bar thin elastic' label='Js' value='220'></div>
                     <div class='bar_group__bar thin elastic' label='Java' value='300'></div>
                     <div class='bar_group__bar thin elastic' label='Hibrenate' value='250'></div>
                     <div class='bar_group__bar thin elastic' label='Spring' value='150'></div>
+                    <div class='bar_group__bar thin elastic' label='Js' value='220'></div>
+                    <div class='bar_group__bar thin elastic' label='Css3' value='130'></div>
                 </div>            
             </div>
         </div>
