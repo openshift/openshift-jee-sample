@@ -62,6 +62,10 @@
         <property name="dataSource" ref="ds"></property>  
     </bean>  
     <context:component-scan base-package="com.test"></context:component-scan>
+    <mvc:resources mapping="/resources/**" location="WEB-INF/resources/" />
+    <mvc:resources mapping="/css/**" location="WEB-INF/resources/css/" />
+    <mvc:resources mapping="/js/**" location="WEB-INF/resources/js/" />
+    <mvc:resources mapping="/images/**" location="WEB-INF/resources/images/" />
+    <mvc:resources mapping="/fonts/**" location="WEB-INF/resources/fonts/" />
     <mvc:annotation-driven />
-    <mvc:resources mapping="/resources/**" location="/resources/" />
 </beans>
