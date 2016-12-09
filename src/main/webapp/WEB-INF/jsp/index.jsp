@@ -145,21 +145,19 @@
                 <div class="col-md-4 list-gds text-center">
                     <i class="fa fa-cog" aria-hidden="true"></i>
                     <h4>WHY CHOOSE Me.</h4>
-                    <p>Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, 
-                        suscipit nec mauris. Suspendisse commodo tempor sagittis</p>
+                    <p>I have extensive information architecture and writing skills; experience with a wide range of projects (business systems and web applications) and experience.</p>
                 </div>
                 <div class="col-md-4 list-gds text-center">
                     <i class="fa fa-laptop" aria-hidden="true"></i>
                     <h4>WHAT I DO.
                     </h4>
-                    <p>Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, 
-                        suscipit nec mauris. Suspendisse commodo tempor sagittis</p>
+                    <p>I write easy understandable code and short.
+                        Learn quick and implements it fast on Project.</p>
                 </div>
                 <div class="col-md-4 list-gds text-center">
                     <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                     <h4>My MISSION.</h4>
-                    <p>Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, 
-                        suscipit nec mauris. Suspendisse commodo tempor sagittis</p>
+                    <p>Make a Application which can Secure home and control appliances over Internet with high Security.</p>
                 </div>               
                 <div class="clearfix"></div>			           
             </div>
