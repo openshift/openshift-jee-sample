@@ -5,8 +5,7 @@
         <!-- for-mobile-apps -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="keywords" content="Classy Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-              Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <meta name="keywords" content="Suroj Resume,Java Suroj" />
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
             function hideURLbar(){ window.scrollTo(0,1); }
         </script>
@@ -289,7 +288,7 @@
                             <a class="cm-overlay" href="images/1.jpg">
                                 <img src="images/1.jpg" alt=" " class="img-responsive">
                                 <div class="overlay">
-                                    <h4>Classy Resume</h4>                           
+                                    <h4>Suroj Resume</h4>                           
                                 </div>
                             </a>
                         </div>
@@ -297,7 +296,7 @@
                             <a class="cm-overlay" href="images/2.jpg">
                                 <img src="images/2.jpg" alt=" " class="img-responsive">
                                 <div class="overlay">
-                                    <h4>Classy Resume</h4>                           
+                                    <h4>Suroj Resume</h4>                           
                                 </div>
                             </a>
                         </div>
@@ -305,7 +304,7 @@
                             <a class="cm-overlay" href="images/3.jpg">
                                 <img src="images/3.jpg" alt=" " class="img-responsive">
                                 <div class="overlay">
-                                    <h4>Classy Resume</h4>                           
+                                    <h4>Suroj Resume</h4>                           
                                 </div>
                             </a>
                         </div>
@@ -315,7 +314,7 @@
                             <a class="cm-overlay" href="images/4.jpg">
                                 <img src="images/4.jpg" alt=" " class="img-responsive">
                                 <div class="overlay">
-                                    <h4>Classy Resume</h4>                           
+                                    <h4>Suroj Resume</h4>                           
                                 </div>
                             </a>
                         </div>
@@ -323,7 +322,7 @@
                             <a class="cm-overlay" href="images/5.jpg">
                                 <img src="images/5.jpg" alt=" " class="img-responsive">
                                 <div class="overlay">
-                                    <h4>Classy Resume</h4>                           
+                                    <h4>Suroj Resume</h4>                           
                                 </div>                               
                             </a>                    
                         </div>                  
@@ -331,7 +330,7 @@
                             <a class="cm-overlay" href="images/6.jpg">
                                 <img src="images/6.jpg" alt=" " class="img-responsive">
                                 <div class="overlay">
-                                    <h4>Classy Resume</h4>                           
+                                    <h4>Suroj Resume</h4>                           
                                 </div>
                             </a>
                         </div>
@@ -341,7 +340,7 @@
                             <a class="cm-overlay" href="images/7.jpg">
                                 <img src="images/7.jpg" alt=" " class="img-responsive">
                                 <div class="overlay">
-                                    <h4>Classy Resume</h4>                           
+                                    <h4>Suroj Resume</h4>                           
                                 </div>
                             </a>
                         </div>
@@ -349,7 +348,7 @@
                             <a class="cm-overlay" href="images/8.jpg">
                                 <img src="images/8.jpg" alt=" " class="img-responsive">
                                 <div class="overlay">
-                                    <h4>Classy Resume</h4>                           
+                                    <h4>Suroj Resume</h4>                           
                                 </div>
                             </a>
                         </div>
@@ -357,7 +356,7 @@
                             <a class="cm-overlay" href="images/9.jpg">
                                 <img src="images/9.jpg" alt=" " class="img-responsive">
                                 <div class="overlay">
-                                    <h4>Classy Resume</h4>                           
+                                    <h4>Suroj Resume</h4>                           
                                 </div>
                             </a>
                         </div>
