@@ -53,9 +53,9 @@
                 </div>
                 <!--//Slider-->
                 <ul class="top-links">
-                    <li><a href="https://m.me/surojd" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://fb.com/surojd" target="_blank"><i class="fa fa-facebook"></i></a></li>
                     <!--<li><a href="resources/#"><i class="fa fa-twitter"></i></a></li>-->
-                    <li><a href="https://linkined.com/surojd"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/surojd"><i class="fa fa-linkedin"></i></a></li>
                     <!--<li><a href="resources/#"><i class="fa fa-google-plus"></i></a></li>-->
                 </ul>
             </div>
