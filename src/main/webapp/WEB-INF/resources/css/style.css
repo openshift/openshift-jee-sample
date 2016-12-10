@@ -1055,11 +1055,20 @@ p.counter {
         font-size: 3em;
         letter-spacing: 6px;
     }
+    .agile-about-right-img img {
+        width: 81%;
+        max-height: 450px;
+    }
 }
 @media (max-width:1366px){
     .skill-agile h4 {
         font-size: 1.3em;
     }
+    .agile-about-right-img img {
+        width: 81%;
+        max-height: 450px;
+    }
+
     .education-agile-w3l-info h4, .education-agile-w3l-year h4 {
         font-size: 1.4em;
     }
@@ -1073,6 +1082,10 @@ p.counter {
 @media (max-width:1280px){
     .skills {
         min-height: 696px;
+    }
+    .agile-about-right-img img {
+        width: 81%;
+        max-height: 450px;
     }
     #counter {
         min-height: 400px;
@@ -1101,6 +1114,10 @@ p.counter {
 @media (max-width:1080px){
     #home {
         min-height: 594px;
+    }
+    .agile-about-right-img img {
+        width: 81%;
+        max-height: 450px;
     }
     .callbacks_tabs {
         bottom: -128%;
