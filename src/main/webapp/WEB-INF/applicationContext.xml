@@ -52,15 +52,6 @@
     <!-- Enable the configura   tion of transactional behavior based on annotations -->
     <!--<tx:annotation-driven transaction-manager="txManager"/>-->
     
-    <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost/db_contact" />
-        <property name="username" value="root" />
-        <property name="password" value="" />
-    </bean>
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">  
-        <property name="dataSource" ref="ds"></property>  
-    </bean>  
     <context:component-scan base-package="com.test"></context:component-scan>
     <mvc:resources mapping="/resources/**" location="WEB-INF/resources/" />
     <mvc:resources mapping="/css/**" location="WEB-INF/resources/css/" cache-period="31536000"/>
