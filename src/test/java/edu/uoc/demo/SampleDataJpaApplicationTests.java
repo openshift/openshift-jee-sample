@@ -28,38 +28,38 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * @author Oliver Gierke
  * @author Dave Syer
  */
-@RunWith(SpringRunner.class)
-@SpringBootTest
-// Enable JMX so we can test the MBeans (you can't do this in a properties file)
-//@TestPropertySource(properties = { "spring.jmx.enabled:true",
-//        "spring.datasource.jmx-enabled:true" })
-@ActiveProfiles("test")
-// Separate profile for web tests to avoid clashing databases
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
+//// Enable JMX so we can test the MBeans (you can't do this in a properties file)
+////@TestPropertySource(properties = { "spring.jmx.enabled:true",
+////        "spring.datasource.jmx-enabled:true" })
+//@ActiveProfiles("test")
+//// Separate profile for web tests to avoid clashing databases
 public class SampleDataJpaApplicationTests {
 
-    @Autowired
-    private WebApplicationContext context;
-
-    private MockMvc mvc;
-
-    @Before
-    public void setUp() {
-        this.mvc = MockMvcBuilders.webAppContextSetup(this.context).build();
-    }
-
-    @Test
-    public void testHome() throws Exception {
-
-        this.mvc.perform(get("/")).andExpect(status().isOk())
-//                .andExpect(content().string("Bath"))
-        ;
-    }
-
-//    @Test
-//    public void testJmx() throws Exception {
-//        assertThat(ManagementFactory.getPlatformMBeanServer()
-//                .queryMBeans(new ObjectName("jpa.sample:type=ConnectionPool,*"), null))
-//                .hasSize(1);
+//    @Autowired
+//    private WebApplicationContext context;
+//
+//    private MockMvc mvc;
+//
+//    @Before
+//    public void setUp() {
+//        this.mvc = MockMvcBuilders.webAppContextSetup(this.context).build();
 //    }
+//
+//    @Test
+//    public void testHome() throws Exception {
+//
+//        this.mvc.perform(get("/")).andExpect(status().isOk())
+////                .andExpect(content().string("Bath"))
+//        ;
+//    }
+//
+////    @Test
+////    public void testJmx() throws Exception {
+////        assertThat(ManagementFactory.getPlatformMBeanServer()
+////                .queryMBeans(new ObjectName("jpa.sample:type=ConnectionPool,*"), null))
+////                .hasSize(1);
+////    }
 
 }
