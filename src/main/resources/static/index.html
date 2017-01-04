@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />-->
-    <link rel="stylesheet" href="https://cv.uoc.edu/UOC/GEF/gef/gef.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-
+    <!--<link rel="stylesheet" href="https://cv.uoc.edu/UOC/GEF/gef/gef.css" />-->
+    <link rel="stylesheet" href="https://www.uoc.edu/portal/system/modules/edu.uoc.presentations/resources/css/gef.css" />
 </head>
 <body ng-app="myApp">
 <div class="container" ng-controller="AppController">
     <div class="page-header">
-        <h1>A checklist v1.4</h1>
+        <h1>A checklist v1.4b</h1>
     </div>
     <div class="alert alert-info" role="alert" ng-hide="items &amp;&amp; items.length > 0">
         There are no items yet.
@@ -24,8 +22,7 @@
             <div class="col-xs-3">
                 <button class="pull-right btn btn-danger" type="button" title="Delete"
                         ng-click="deleteItem(item)">
-                    <!--<span class="glyphicon glyphicon-trash"></span>-->
-                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    <span class="icon icon--close"></span><!--trash-->
                 </button>
             </div>
         </div>
@@ -34,8 +31,7 @@
             <input type="text" class="form-control" ng-model="newItem" placeholder="Enter the description..." />
           <span class="input-group-btn">
             <button class="btn btn-default" type="submit" ng-disabled="!newItem" title="Add">
-              <!--<span class="glyphicon glyphicon-plus"></span>-->
-              <i class="fa fa-plus" aria-hidden="true"></i>
+                <span class="icon icon--plus"></span>
             </button>
           </span>
         </div>
