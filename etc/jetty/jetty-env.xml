@@ -1,0 +1,18 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+  <Configure class="org.eclipse.jetty.maven.plugin.JettyWebAppContext">
+
+    <New id="ds" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg/>
+        <Arg><SystemProperty name="datasource.jndi" /></Arg>
+        <Arg>
+            <New class="org.postgresql.ds.PGSimpleDataSource">
+                <Set name="DatabaseName"><SystemProperty name="jdbc.DatabaseName" /></Set>
+                <Set name="ServerName"><SystemProperty name="jdbc.ServerName" /></Set>
+                <Set name="PortNumber"><SystemProperty name="jdbc.PortNumber" /></Set>
+                <Set name="User"><SystemProperty name="jdbc.username" /></Set>
+                <Set name="Password"><SystemProperty name="jdbc.password" /></Set>
+            </New>
+        </Arg>
+    </New>
+
+</Configure>

@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Welcome to OpenShift</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Waldo Welcome to OpenShift</title>
 
-<style>
+    <style>
 
   /*!
    * Bootstrap v3.0.0
@@ -207,18 +207,18 @@
 </head>
 <body>
 
- <section class='container'>
-          <hgroup>
-            <h1>Welcome to your WildFly 8 application on OpenShift</h1>
-          </hgroup>
+<section class='container'>
+    <hgroup>
+        <h1>Welcome to your WildFly 10 application on OpenShift Waldo</h1>
+    </hgroup>
 
 
-        <div class="row">
-          <section class='col-xs-12 col-sm-6 col-md-6'>
+    <div class="row">
+        <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
-              <h2>Deploying code changes</h2>
+                <h2>Deploying code changes</h2>
                 <p>OpenShift uses the <a href="http://git-scm.com/">Git version control system</a> for your source code, and grants you access to it via the Secure Shell (SSH) protocol. In order to upload and download code to your application you need to give us your <a href="https://www.openshift.com/developers/remote-access">public SSH key</a>. You can upload it within the web console or install the <a href="https://www.openshift.com/developers/rhc-client-tools-install">RHC command line tool</a> and run <code>rhc setup</code> to generate and upload your key automatically.</p>
-                
+
                 <h3>Working in your local Git repository</h3>
                 <p>If you created your application from the command line and uploaded your SSH key, rhc will automatically download a copy of that source code repository (Git calls this 'cloning') to your local system.</p>
 
@@ -231,69 +231,69 @@
 
 $ git commit -a -m 'Some commit message'
 $ git push</pre>
-                  <ul>
+                <ul>
                     <li><a href="https://www.openshift.com/developers/deploying-and-building-applications">Learn more about deploying and building your application</a></li>
                     <li>See the README file in your local application Git repository for more information on the options for deploying applications.</li>
-                  </ul>
+                </ul>
 
                 <h2>Sample Applications</h2>
-                  To get started you can either modify the default war or try one of these samples:
-                    <ul>
-                      <li><a href="https://github.com/wildfly/quickstart/tree/master/kitchensink">kitchensink-example</a> helps you get your foot in the door developing with Java EE 7 on WildFly 8.</li>
-                      <li><a href="https://github.com/wildfly/quickstart/tree/master/kitchensink-html5-mobile">kitchensink-html5-mobile-example</a> based on kitchensink (above), but with an HTML5 client that displays great on a PC or mobile device.</li>
-                    </ul>
-                    
-                    <h3>Example usage</h3>
+                To get started you can either modify the default war or try one of these samples:
+                <ul>
+                    <li><a href="https://github.com/wildfly/quickstart/tree/master/kitchensink">kitchensink-example</a> helps you get your foot in the door developing with Java EE 7 on WildFly 8.</li>
+                    <li><a href="https://github.com/wildfly/quickstart/tree/master/kitchensink-html5-mobile">kitchensink-html5-mobile-example</a> based on kitchensink (above), but with an HTML5 client that displays great on a PC or mobile device.</li>
+                </ul>
+
+                <h3>Example usage</h3>
 <pre>
 cd kitchensink
 git remote add upstream -m master git://github.com/openshift/kitchensink-example.git
 git pull -s recursive -X theirs upstream master</pre>
 
             </section>
-            
-            
-          </section>
-          <section class="col-xs-12 col-sm-6 col-md-6">
 
-                <h2>Managing your application</h2>
 
-                <h3>Web Console</h3>
-                <p>You can use the OpenShift web console to enable additional capabilities via cartridges, add collaborator access authorizations, designate custom domain aliases, and manage domain memberships.</p>
+        </section>
+        <section class="col-xs-12 col-sm-6 col-md-6">
 
-                <h3>Command Line Tools</h3>
-                <p>Installing the <a href="https://www.openshift.com/developers/rhc-client-tools-install">OpenShift RHC client tools</a> allows you complete control of your cloud environment. Read more on how to manage your application from the command line in our <a href="https://www.openshift.com/user-guide">User Guide</a>.
-                </p>
+            <h2>Managing your application</h2>
 
-                <h2>Development Resources</h2>
-                  <h3>JBoss Developer Studio</h3>
-                  <p>
-                    The JBoss Developer Studio is a full featured IDE with OpenShift integration built in.
-                    It gives you the ability to create, edit and deploy applications without having to
-                    leave the IDE.  Links to download, install and use the JBoss Developer Studio for Linux,
-                    Mac OS X, or Windows can be found on the
-                    <a href="https://www.openshift.com/developers/tools">JBoss Developer Studio tools page.</a>
-                  </p>
-                  <h3>Debugging</h3>
-                  <p><a href="snoop.jsp">View debugging information</a> about the server environment including memory pools.</p>
-                  <ul>
-                    <li><a href="https://www.openshift.com/developers">Developer Center</a></li>
-                    <li><a href="https://www.openshift.com/user-guide">User Guide</a></li>
-                    <li><a href="https://www.openshift.com/forums/openshift">OpenShift forums</a></li>
-                    <li><a href="http://stackoverflow.com/questions/tagged/openshift">Stack Overflow questions for OpenShift</a></li>
-                    <li><a href="http://webchat.freenode.net/?randomnick=1&channels=openshift&uio=d4">IRC channel at #openshift on freenode.net</a></li>
-                    <li><a href="http://git-scm.com/documentation">Git documentation</a></li>
-                  </ul>
+            <h3>Web Console</h3>
+            <p>You can use the OpenShift web console to enable additional capabilities via cartridges, add collaborator access authorizations, designate custom domain aliases, and manage domain memberships.</p>
 
-                  
+            <h3>Command Line Tools</h3>
+            <p>Installing the <a href="https://www.openshift.com/developers/rhc-client-tools-install">OpenShift RHC client tools</a> allows you complete control of your cloud environment. Read more on how to manage your application from the command line in our <a href="https://www.openshift.com/user-guide">User Guide</a>.
+            </p>
 
-                
+            <h2>Development Resources</h2>
+            <h3>JBoss Developer Studio</h3>
+            <p>
+                The JBoss Developer Studio is a full featured IDE with OpenShift integration built in.
+                It gives you the ability to create, edit and deploy applications without having to
+                leave the IDE.  Links to download, install and use the JBoss Developer Studio for Linux,
+                Mac OS X, or Windows can be found on the
+                <a href="https://www.openshift.com/developers/tools">JBoss Developer Studio tools page.</a>
+            </p>
+            <h3>Debugging</h3>
+            <p><a href="snoop.jsp">View debugging information</a> about the server environment including memory pools.</p>
+            <ul>
+                <li><a href="https://www.openshift.com/developers">Developer Center</a></li>
+                <li><a href="https://www.openshift.com/user-guide">User Guide</a></li>
+                <li><a href="https://www.openshift.com/forums/openshift">OpenShift forums</a></li>
+                <li><a href="http://stackoverflow.com/questions/tagged/openshift">Stack Overflow questions for OpenShift</a></li>
+                <li><a href="http://webchat.freenode.net/?randomnick=1&channels=openshift&uio=d4">IRC channel at #openshift on freenode.net</a></li>
+                <li><a href="http://git-scm.com/documentation">Git documentation</a></li>
+            </ul>
 
-          </section>
-        </div>
-        
-        <footer>
-          <div class="logo"><a href="https://www.openshift.com/"></a></div>
-        </footer>
+
+
+
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="logo"><a href="https://www.openshift.com/"></a></div>
+    </footer>
 </section>
 
 
