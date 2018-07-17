@@ -7,3 +7,4 @@ Note: to build this repository with maven you must specify "-Popenshift", eg "mv
 
 ## Test for Integration using webhook
 
+## Test for Pull request
