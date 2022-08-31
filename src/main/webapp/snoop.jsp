@@ -1,9 +1,27 @@
 <HTML>
 <HEAD>
 	<TITLE>JBossAS7 JSP snoop page</TITLE>
-	<%@ page import="javax.servlet.http.HttpUtils,java.util.Enumeration" %>
+	<%@ page import="java.util.Enumeration,jakarta.servlet.http.HttpServletRequest" %>
 	<%@ page import="java.lang.management.*" %>
 	<%@ page import="java.util.*" %>
+	<%!
+	    public StringBuffer getRequestURL(HttpServletRequest req) {
+            StringBuffer url = new StringBuffer();
+            String scheme = req.getScheme();
+            int port = req.getServerPort();
+            String urlPath = req.getRequestURI();
+            url.append(scheme);
+            url.append("://");
+            url.append(req.getServerName());
+            if (scheme.equals("http") && port != 80 || scheme.equals("https") && port != 443) {
+                url.append(':');
+                url.append(req.getServerPort());
+            }
+
+            url.append(urlPath);
+            return url;
+        }
+	%>
 </HEAD>
 <BODY>
 
@@ -11,41 +29,41 @@
 <img src="images/jbosscorp_logo.png">
 
 <h2>JVM Memory Monitor</h2>
- 
- 
+
+
 <table border="0" width="100%">
- 
+
 <tbody>
 <tr>
 <td colspan="2" align="center">
 <h3>Memory MXBean</h3>
 </td>
 </tr>
- 
+
 <tr>
 <td width="200">Heap Memory Usage</td>
 <td>
 <%=ManagementFactory.getMemoryMXBean().getHeapMemoryUsage()%>
 </td>
 </tr>
- 
+
 <tr>
 <td>Non-Heap Memory Usage</td>
 <td>
 <%=ManagementFactory.getMemoryMXBean().getNonHeapMemoryUsage()%>
 </td>
 </tr>
- 
+
 <tr>
 <td colspan="2"> </td>
 </tr>
- 
+
 <tr>
 <td colspan="2" align="center">
 <h3>Memory Pool MXBeans</h3>
 </td>
 </tr>
- 
+
 </tbody>
 </table>
 <%
@@ -53,38 +71,38 @@ Iterator iter = ManagementFactory.getMemoryPoolMXBeans().iterator();
 while (iter.hasNext()) {
 MemoryPoolMXBean item = (MemoryPoolMXBean) iter.next();
 %>
- 
+
 <table style="border: 1px #98AAB1 solid;" border="0" width="100%">
- 
+
 <tbody>
 <tr>
 <td colspan="2" align="center"><strong><%= item.getName() %></strong></td>
 </tr>
- 
+
 <tr>
 <td width="200">Type</td>
 <td><%= item.getType() %></td>
 </tr>
- 
+
 <tr>
 <td>Usage</td>
 <td><%= item.getUsage() %></td>
 </tr>
- 
+
 <tr>
 <td>Peak Usage</td>
 <td><%= item.getPeakUsage() %></td>
 </tr>
- 
+
 <tr>
 <td>Collection Usage</td>
 <td><%= item.getCollectionUsage() %></td>
 </tr>
- 
+
 </tbody>
 </table>
- 
- 
+
+
 <%
 }
 %>
@@ -94,7 +112,7 @@ MemoryPoolMXBean item = (MemoryPoolMXBean) iter.next();
 <TABLE>
 <TR>
 	<TH align=right>Requested URL:</TH>
-	<TD><%= HttpUtils.getRequestURL(request) %></TD>
+	<TD><%= getRequestURL(request) %></TD>
 </TR>
 <TR>
 	<TH align=right>Request method:</TH>
@@ -280,4 +298,3 @@ MemoryPoolMXBean item = (MemoryPoolMXBean) iter.next();
 
 </BODY>
 </HTML>
-

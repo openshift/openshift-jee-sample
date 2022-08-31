@@ -35,7 +35,7 @@ if [ -f "$local_source_dir/pom.xml" ]; then
   restore_saved_artifacts
   
   pushd $local_source_dir &> /dev/null
-  JAVA_HOME=/etc/alternatives/java_sdk_1.7.0  
+  JAVA_HOME=/etc/alternatives/java_sdk_11
   mvn clean package -Popenshift -DskipTests
   err=$?
   if [ $err -ne 0 ]; then
