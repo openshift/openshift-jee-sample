@@ -16,8 +16,8 @@
         <wildfly-maven-plugin.groupId>org.wildfly.plugins</wildfly-maven-plugin.groupId>
         <wildfly-maven-plugin.artifactId>wildfly-maven-plugin</wildfly-maven-plugin.artifactId>
         <wildfly-maven-plugin.version>4.0.0.Beta3</wildfly-maven-plugin.version>
-        <wildfly.ee-feature-pack.location>org.wildfly:wildfly-ee-galleon-pack:27.0.0.Alpha4-Boh</wildfly.ee-feature-pack.location>
-        <wildfly.cloud-feature-pack.location>org.wildfly.cloud:wildfly-cloud-galleon-pack:2.0.0.Alpha4-Boh</wildfly.cloud-feature-pack.location>
+        <wildfly.ee-feature-pack.location>org.wildfly:wildfly-ee-galleon-pack:27.0.0.Alpha4</wildfly.ee-feature-pack.location>
+        <wildfly.cloud-feature-pack.location>org.wildfly.cloud:wildfly-cloud-galleon-pack:2.0.0.Alpha4</wildfly.cloud-feature-pack.location>
         <wildfly.ee-channel.location></wildfly.ee-channel.location> <!-- TODO: add channel configuration to wildfly-maven-plugin -->
     </properties>
 
